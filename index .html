@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breaking Barriers - Empowering Women for Gender Equality</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333;}
+
+    /* Navigation Bar */
+    nav {background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); padding: 1rem 0; position: sticky; top: 0; z-index: 1000;}
+    .nav-container {max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;}
+    .logo {display: flex; align-items: center; gap: 1rem; color: white; font-size: 1.5rem; font-weight: bold;}
+    .logo-icon {width: 50px; height: 50px; background: white; border-radius: 10px; overflow: hidden;}
+    .logo-icon img {width: 100%; height: 100%; object-fit: cover;}
+    .nav-links {display: flex; gap: 2rem; list-style: none;}
+    .nav-links a {color: white; text-decoration: none; font-weight: 500;}
+    .nav-links a:hover {opacity: 0.8;}
+
+    /* Hero Section */
+    .hero {background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); color: white; padding: 8rem 2rem; text-align: center;}
+    .hero h1 {font-size: 3.5rem; margin-bottom: 1rem;}
+    .hero p {font-size: 1.3rem; margin-bottom: 2rem;}
+    .cta-buttons {display: flex; gap: 1rem; justify-content: center;}
+    .btn {padding: 1rem 2rem; border: none; border-radius: 50px; font-weight: 600; cursor: pointer;}
+    .btn-primary {background: white; color: #8B5CF6;}
+    .btn-secondary {background: transparent; color: white; border: 2px solid white;}
+
+    /* About Section */
+    .about {padding: 6rem 2rem; background: white;}
+    .container {max-width: 1200px; margin: 0 auto;}
+    .section-title {text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #8B5CF6;}
+    .section-subtitle {text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;}
+    .about-content {display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;}
+    .about-text h3 {color: #EC4899; font-size: 1.8rem; margin-bottom: 1rem;}
+    .about-text p {margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.8;}
+    .about-image {background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); border-radius: 20px; padding: 3rem; color: white; text-align: center;}
+    .about-image h4 {font-size: 2rem; margin-bottom: 1rem;}
+
+    /* Contact Section */
+    .contact-section {background-color: #f9f9ff; padding: 6rem 2rem; text-align: center;}
+    .contact-section h2 {font-size: 2.5rem; color: #8B5CF6; margin-bottom: 1rem;}
+    .contact-form {max-width: 600px; margin: 0 auto; text-align: left;}
+    .contact-form label {display: block; margin-bottom: 0.5rem; font-weight: bold; color: #555;}
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;
+    }
+    .contact-form button {
+      background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+      color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: bold;
+    }
+    .contact-form button:hover {opacity: 0.9;}
+
+    /* Emergency Banner */
+    .emergency-banner {
+      background: linear-gradient(90deg, #EF4444, #9333EA);
+      color: white;
+      text-align: center;
+      padding: 1.2rem 1rem;
+      font-size: 1.35rem;
+      font-weight: bold;
+      border-radius: 12px;
+      margin: 1.5rem 2rem;
+    }
+    .emergency-banner a {
+      color: #FFD700;
+      text-decoration: underline;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+    }
+
+    /* Paragraph after image */
+    .empower-text {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #4B0082;
+      font-weight: 500;
+      margin: 1rem 2rem 2rem 2rem;
+      line-height: 1.5;
+    }
+
+    /* Chatbot */
+    .chatbot {
+      position: fixed; bottom: 20px; right: 20px; background: white; border: 2px solid #8B5CF6;
+      border-radius: 15px; width: 300px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    .chatbot-header {background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); color: white; padding: 10px; border-radius: 12px 12px 0 0;}
+    .chatbot-body {max-height: 250px; overflow-y: auto; padding: 10px; font-size: 0.9rem;}
+    .chatbot-input {display: flex; border-top: 1px solid #ddd;}
+    .chatbot-input input {flex: 1; padding: 8px; border: none; border-radius: 0 0 0 12px;}
+    .chatbot-input button {background: #8B5CF6; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 0 0 12px 0;}
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon"><img src="Capture d'écran 2025-11-07 231334.png" alt="Breaking Barriers Logo"></div>
+        <span>Breaking Barriers</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Breaking Barriers</h1>
+      <p>Empowering Women, Achieving Equality, Transforming Society</p>
+      <div class="cta-buttons">
+        <button class="btn btn-primary">Donate Now</button>
+        <button class="btn btn-secondary">Join Our Mission</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Breaking Barriers</h2>
+      <p class="section-subtitle">Champions for Gender Equality and Women's Empowerment</p>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Our Mission</h3>
+          <p>Breaking Barriers is dedicated to creating a world where women have equal opportunities, rights, and representation in all aspects of society.</p>
+        </div>
+        <div class="about-image">
+          <h4>Our Vision</h4>
+          <p>A world where gender equality is not just an aspiration, but a lived reality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image and motivating paragraph -->
+  <div style="text-align: center; margin: 2.5rem 0;">
+    <img src="C:/Users/Asus/OneDrive - ESPRIT/Images/Captures d’écran/rahma.jfif" 
+         alt="Empower Women" 
+         style="max-width: 80%; height: auto; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.3);">
+  </div>
+  <p class="empower-text">
+    Speak up without fear. Learn from the experience of Rahma Rahmer — protect yourself and others before it’s too late. 
+    Law 58 (2017) against violence towards women provides you with legal protection. Your voice matters, and together 
+    we can create a safer, empowered society.
+  </p>
+
+  <!-- Emergency / Support Banner -->
+  <div class="emergency-banner" id="emergency">
+    Numéro national d’orientation et d’écoute pour les femmes victimes de violence : 3919
+    <a href="https://www.croissant-rouge.tn" target="_blank">
+      Contacter le Croissant Rouge Tunisien
+    </a>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>📞 Contact Us</h2>
+    <div class="contact-form">
+      <form id="contactForm">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="background: #1f2937; color: white; padding: 1.5rem 2rem; text-align: center; border-top: 1px solid #374151;">
+      <p style="margin: 0.3rem 0;">📞 +216 50 857 946 &nbsp;&nbsp;|&nbsp;&nbsp; 📸 
+        <a href="https://www.instagram.com/breaking__barriers25/" target="_blank" style="color: #FFD700; text-decoration: underline;">
+          breaking__barriers25
+        </a>
+      </p>
+      <p class="footer-bottom" style="margin-top: 0.5rem; color: #9ca3af;">&copy; 2025 Breaking Barriers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot">
+    <div class="chatbot-header">🤖 Assistant</div>
+    <div class="chatbot-body" id="chatbot-body">
+      <p><strong>Bot :</strong> Bonjour 😊 ! Comment puis-je vous aider ?</p>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Écrivez ici...">
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+
+  <script>
+    function getBotResponse(input) {
+      input = input.toLowerCase();
+      if (input.includes("membre") || input.includes("adhérer") || input.includes("inscription")) {
+        return "Pour devenir membre, remplissez le formulaire d’adhésion disponible sur le site.";
+      } 
+      else if (input.includes("don") || input.includes("aider") || input.includes("soutenir")) {
+        return "Pour faire un don, allez dans la section 'Don' du site. Merci pour votre soutien ❤️";
+      } 
+      else if (input.includes("bonjour") || input.includes("salut") || input.includes("coucou")) {
+        return "Bonjour 😊 ! Comment puis-je vous aider ?";
+      } 
+      else if (input.includes("contact") || input.includes("message") || input.includes("mail")) {
+        return "Vous pouvez nous contacter via le formulaire ci-dessus 📞.";
+      } 
+      else {
+        return "Désolé, je n’ai pas compris. Pouvez-vous reformuler ?";
+      }
+    }
+
+    function sendMessage() {
+      const inputField = document.getElementById("user-input");
+      const userMessage = inputField.value;
+      const chatBody = document.getElementById("chatbot-body");
+
+      if (userMessage.trim() !== "") {
+        chatBody.innerHTML += `<p><strong>Vous :</strong> ${userMessage}</p>`;
+        const botReply = getBotResponse(userMessage);
+        chatBody.innerHTML += `<p><strong>Bot :</strong> ${botReply}</p>`;
+        inputField.value = "";
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
